@@ -9,6 +9,7 @@ def key_for_min_value(name_hash)
       min = value
       key = name
     elsif min > "chicken"
-      key
+      min = value
+      key = name
   end
 end
