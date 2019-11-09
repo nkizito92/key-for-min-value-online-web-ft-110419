@@ -3,7 +3,9 @@
 
 def key_for_min_value(name_hash)
   name_hash.collect do |key, value |
-    if value < value.max
+    if value.max
+      "Too big"
+    else 
       key
     end 
   end 
