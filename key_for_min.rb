@@ -5,6 +5,8 @@ def key_for_min_value(name_hash)
   min = "chicken"
   key = nil
   name_hash.collect do |key, value |
-    key
+    if min == "chicken"
+      value
+      key = key
   end
 end
