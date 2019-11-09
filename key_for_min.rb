@@ -3,6 +3,6 @@
 
 def key_for_min_value(name_hash)
   name_hash.each do |key, value |
-    if name_hash[1] < value.max 
+    for i in name_hash[i] < value.max 
   end 
 end
