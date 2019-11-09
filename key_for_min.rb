@@ -4,9 +4,11 @@
 def key_for_min_value(name_hash)
   min = "chicken"
   key = nil
-  name_hash.collect do |key, value |
+  name_hash.collect do |name, value |
     if min == "chicken"
-      value
-      key = key
+      min = value
+      key = name
+    elsif min > "chicken"
+      key
   end
 end
